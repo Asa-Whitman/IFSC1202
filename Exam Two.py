@@ -15,7 +15,7 @@ UserName = UserName.lower()
 UserName = UserName.capitalize()
 if UserName != 'Q':
     i=0
-    if UserName == Boyslist[i] or UserName == Girlslist[i]:
+    if UserName in Boyslist or UserName in Girlslist:
         for i in range (len(Boyslist)):
             if UserName == Boyslist[i]:
                 print("Boy's name. Rank: {}".format(i+1))
